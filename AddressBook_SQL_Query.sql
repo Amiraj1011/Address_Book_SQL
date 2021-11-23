@@ -37,3 +37,6 @@ SELECT * FROM address_book_System WHERE City='Sangli';
 
 ---UC7 : Count size of addressbook by city and state
 SELECT COUNT(City) as TotalContact FROM address_book_System;  
+
+---UC8 : Ability to retrieve entries sorted  alphabetically by person's name for a given city
+SELECT * FROM address_book_System WHERE State='Maharashtra' ORDER BY (First_Name);
